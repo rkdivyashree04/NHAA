@@ -42,15 +42,15 @@ export default function OfficerLoginModal({ isOpen, onClose, onLoginSuccess }) {
       <div
         className="modal-card wide"
         onClick={(e) => e.stopPropagation()}
-        style={{ padding: 0, overflow: 'hidden', maxWidth: '880px', background: '#ffffff' }}
+        style={{ padding: 0, maxWidth: '880px', background: '#ffffff', maxHeight: 'calc(100vh - 2.5rem)', overflowY: 'auto' }}
       >
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', minHeight: '520px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', minHeight: '480px' }}>
           
           {/* LEFT: Clean Public-Service Illustration & Values (LIGHT Background as required) */}
           <div
             style={{
               background: 'linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 100%)',
-              padding: '3rem 2.5rem',
+              padding: '2rem 1.75rem',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'space-between',
@@ -59,89 +59,89 @@ export default function OfficerLoginModal({ isOpen, onClose, onLoginSuccess }) {
           >
             <div>
               {/* Emblem / Title */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
-                <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'var(--nhaa-blue)', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <Shield size={24} />
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
+                <div style={{ width: '42px', height: '42px', borderRadius: '10px', background: 'var(--nhaa-blue)', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Shield size={22} />
                 </div>
                 <div>
-                  <h3 style={{ fontSize: '1.3rem', fontWeight: '800', color: 'var(--nhaa-blue-dark)', lineHeight: 1.1 }}>
+                  <h3 style={{ fontSize: '1.25rem', fontWeight: '800', color: 'var(--nhaa-blue-dark)', lineHeight: 1.1 }}>
                     NHAA
                   </h3>
-                  <div style={{ fontSize: '0.8rem', fontWeight: '700', color: 'var(--nhaa-blue)' }}>
+                  <div style={{ fontSize: '0.78rem', fontWeight: '700', color: 'var(--nhaa-blue)' }}>
                     National Helpline Against Atrocities
                   </div>
                 </div>
               </div>
 
-              <h2 style={{ fontSize: '1.35rem', fontWeight: '800', color: 'var(--nhaa-blue-dark)', marginBottom: '0.75rem', lineHeight: '1.35' }}>
+              <h2 style={{ fontSize: '1.25rem', fontWeight: '800', color: 'var(--nhaa-blue-dark)', marginBottom: '0.65rem', lineHeight: '1.3' }}>
                 AI-Assisted Victim Support and Vulnerability Assessment
               </h2>
 
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: '1.6', marginBottom: '2rem' }}>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.5', marginBottom: '1.5rem' }}>
                 Secure administrative case management portal for authorized Nodal Officers, Special PoA Advocates, and Certified Crisis Counsellors.
               </p>
 
               {/* Three Pillars */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontSize: '0.88rem', color: 'var(--text-primary)', fontWeight: '600' }}>
-                  <div style={{ background: '#dbeafe', color: '#1e40af', padding: '0.3rem', borderRadius: '50%' }}>
-                    <CheckCircle2 size={16} />
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontSize: '0.84rem', color: 'var(--text-primary)', fontWeight: '600' }}>
+                  <div style={{ background: '#dbeafe', color: '#1e40af', padding: '0.25rem', borderRadius: '50%' }}>
+                    <CheckCircle2 size={15} />
                   </div>
                   <span>Secure End-to-End Case Dossiers</span>
                 </div>
 
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontSize: '0.88rem', color: 'var(--text-primary)', fontWeight: '600' }}>
-                  <div style={{ background: '#ccfbf1', color: '#0f766e', padding: '0.3rem', borderRadius: '50%' }}>
-                    <CheckCircle2 size={16} />
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontSize: '0.84rem', color: 'var(--text-primary)', fontWeight: '600' }}>
+                  <div style={{ background: '#ccfbf1', color: '#0f766e', padding: '0.25rem', borderRadius: '50%' }}>
+                    <CheckCircle2 size={15} />
                   </div>
                   <span>Victim-Centred Trauma & SVI Triaging</span>
                 </div>
 
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontSize: '0.88rem', color: 'var(--text-primary)', fontWeight: '600' }}>
-                  <div style={{ background: '#dcfce7', color: '#166534', padding: '0.3rem', borderRadius: '50%' }}>
-                    <CheckCircle2 size={16} />
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontSize: '0.84rem', color: 'var(--text-primary)', fontWeight: '600' }}>
+                  <div style={{ background: '#dcfce7', color: '#166534', padding: '0.25rem', borderRadius: '50%' }}>
+                    <CheckCircle2 size={15} />
                   </div>
                   <span>Human-Supervised Decision Making</span>
                 </div>
               </div>
             </div>
 
-            <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)', borderTop: '1px solid #bfdbfe', paddingTop: '1rem' }}>
+            <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', borderTop: '1px solid #bfdbfe', paddingTop: '0.85rem', marginTop: '1.25rem' }}>
               Department of Social Justice & Empowerment, Government of India
             </div>
           </div>
 
           {/* RIGHT: Clean White Login Card */}
-          <div style={{ padding: '3rem 2.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'center', background: '#ffffff', position: 'relative' }}>
+          <div style={{ padding: '2rem 2.25rem', display: 'flex', flexDirection: 'column', justifyContent: 'center', background: '#ffffff', position: 'relative' }}>
             <button
               onClick={onClose}
-              style={{ position: 'absolute', top: '1.25rem', right: '1.25rem', background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', padding: '0.4rem' }}
+              style={{ position: 'absolute', top: '1rem', right: '1rem', background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', padding: '0.4rem' }}
               aria-label="Close Login Modal"
             >
               <X size={20} />
             </button>
 
-            <div style={{ marginBottom: '1.5rem' }}>
-              <h2 style={{ fontSize: '1.6rem', fontWeight: '800', color: 'var(--nhaa-blue-dark)', marginBottom: '0.3rem' }}>
+            <div style={{ marginBottom: '1.1rem' }}>
+              <h2 style={{ fontSize: '1.45rem', fontWeight: '800', color: 'var(--nhaa-blue-dark)', marginBottom: '0.25rem' }}>
                 {t('officer.loginTitle')}
               </h2>
-              <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)' }}>
+              <p style={{ fontSize: '0.84rem', color: 'var(--text-secondary)' }}>
                 {t('officer.loginSubtitle')}
               </p>
             </div>
 
             {error && (
-              <div style={{ background: '#fef2f2', border: '1px solid #fecaca', color: '#b91c1c', padding: '0.65rem 0.9rem', borderRadius: '6px', fontSize: '0.84rem', marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                <AlertCircle size={16} />
+              <div style={{ background: '#fef2f2', border: '1px solid #fecaca', color: '#b91c1c', padding: '0.55rem 0.8rem', borderRadius: '6px', fontSize: '0.82rem', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                <AlertCircle size={15} />
                 <span>{error}</span>
               </div>
             )}
 
             <form onSubmit={handleSubmit}>
-              <div className="form-group" style={{ marginBottom: '1rem' }}>
-                <label style={{ fontSize: '0.85rem', fontWeight: '600' }}>{t('officer.officialId')} *</label>
+              <div className="form-group" style={{ marginBottom: '0.85rem' }}>
+                <label style={{ fontSize: '0.82rem', fontWeight: '600' }}>{t('officer.officialId')} *</label>
                 <div style={{ position: 'relative' }}>
-                  <User size={18} color="var(--text-muted)" style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)' }} />
+                  <User size={16} color="var(--text-muted)" style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)' }} />
                   <input
                     type="text"
                     required
@@ -149,16 +149,16 @@ export default function OfficerLoginModal({ isOpen, onClose, onLoginSuccess }) {
                     onChange={(e) => setUsername(e.target.value)}
                     placeholder="e.g. selvam.nodal or OFF-1042"
                     className="form-control"
-                    style={{ paddingLeft: '2.4rem' }}
+                    style={{ paddingLeft: '2.3rem', paddingBlock: '0.55rem', fontSize: '0.88rem' }}
                     id="login-username"
                   />
                 </div>
               </div>
 
-              <div className="form-group" style={{ marginBottom: '1.25rem' }}>
-                <label style={{ fontSize: '0.85rem', fontWeight: '600' }}>{t('officer.password')} *</label>
+              <div className="form-group" style={{ marginBottom: '0.85rem' }}>
+                <label style={{ fontSize: '0.82rem', fontWeight: '600' }}>{t('officer.password')} *</label>
                 <div style={{ position: 'relative' }}>
-                  <Lock size={18} color="var(--text-muted)" style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)' }} />
+                  <Lock size={16} color="var(--text-muted)" style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)' }} />
                   <input
                     type={showPassword ? 'text' : 'password'}
                     required
@@ -166,7 +166,7 @@ export default function OfficerLoginModal({ isOpen, onClose, onLoginSuccess }) {
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="Enter official credentials"
                     className="form-control"
-                    style={{ paddingLeft: '2.4rem', paddingRight: '2.4rem' }}
+                    style={{ paddingLeft: '2.3rem', paddingRight: '2.4rem', paddingBlock: '0.55rem', fontSize: '0.88rem' }}
                     id="login-password"
                   />
                   <button
@@ -175,12 +175,12 @@ export default function OfficerLoginModal({ isOpen, onClose, onLoginSuccess }) {
                     style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', cursor: 'pointer', color: 'var(--text-muted)' }}
                     aria-label="Toggle password visibility"
                   >
-                    {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+                    {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                   </button>
                 </div>
               </div>
 
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', fontSize: '0.84rem' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.1rem', fontSize: '0.82rem' }}>
                 <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', cursor: 'pointer', color: 'var(--text-secondary)' }}>
                   <input
                     type="checkbox"
@@ -197,17 +197,17 @@ export default function OfficerLoginModal({ isOpen, onClose, onLoginSuccess }) {
               <button
                 type="submit"
                 className="btn-primary-action"
-                style={{ width: '100%', padding: '0.85rem', fontSize: '1rem', flexDirection: 'row', justifyContent: 'center' }}
+                style={{ width: '100%', padding: '0.75rem', fontSize: '0.95rem', flexDirection: 'row', justifyContent: 'center' }}
                 id="btn-officer-signin"
               >
                 <span>{t('officer.signIn')}</span>
-                <ArrowRight size={18} />
+                <ArrowRight size={17} />
               </button>
             </form>
 
             {/* Quick Demo Switcher */}
-            <div style={{ marginTop: '1.5rem', borderTop: '1px solid var(--border-light)', paddingTop: '1rem' }}>
-              <div style={{ fontSize: '0.78rem', fontWeight: '700', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
+            <div style={{ marginTop: '1.1rem', borderTop: '1px solid var(--border-light)', paddingTop: '0.85rem' }}>
+              <div style={{ fontSize: '0.76rem', fontWeight: '700', color: 'var(--text-muted)', marginBottom: '0.45rem' }}>
                 {t('officer.quickDemo')}
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.4rem' }}>
@@ -217,16 +217,16 @@ export default function OfficerLoginModal({ isOpen, onClose, onLoginSuccess }) {
                     type="button"
                     onClick={() => handleQuickDemo(o.id)}
                     className="font-btn"
-                    style={{ textAlign: 'left', padding: '0.4rem 0.6rem', fontSize: '0.76rem', background: '#f8fafc' }}
+                    style={{ textAlign: 'left', padding: '0.45rem 0.65rem', fontSize: '0.76rem', background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '6px' }}
                   >
-                    <strong>{o.name.split(' ')[0]}</strong> ({o.role})
+                    <strong style={{ color: 'var(--nhaa-blue-dark)' }}>{o.name.split(' ')[0]}</strong> ({o.role})
                   </button>
                 ))}
               </div>
             </div>
 
             {/* Confidential Security Notice */}
-            <div style={{ marginTop: '1.25rem', fontSize: '0.74rem', color: 'var(--text-muted)', textAlign: 'center' }}>
+            <div style={{ marginTop: '0.85rem', fontSize: '0.72rem', color: 'var(--text-muted)', textAlign: 'center' }}>
               {t('officer.confidentialNotice')}
             </div>
           </div>
